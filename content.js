@@ -33,21 +33,19 @@ var replacements = {
 };
 
 function replaceWords() {
-    var elements = document.querySelectorAll('*');
-
-    elements.forEach(function(element) {
-        if (element.childNodes && element.childNodes.length > 0) {
-            element.childNodes.forEach(function(childNode) {
-                if (childNode.nodeType === Node.TEXT_NODE) {
-                    Object.keys(replacements).forEach(function(searchWord) {
-                        var replaceValue = replacements[searchWord];
-                        var searchRegex = new RegExp("\\b" + searchWord + "\\b", 'gi');
-                        childNode.nodeValue = childNode.nodeValue.replace(searchRegex, replaceValue);
-                    });
-                }
+    function replaceText(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            Object.keys(replacements).forEach(function(searchWord) {
+                var replaceValue = replacements[searchWord];
+                var searchRegex = new RegExp("\\b" + searchWord + "\\b", 'gi');
+                node.nodeValue = node.nodeValue.replace(searchRegex, replaceValue);
             });
+        } else if (node.hasChildNodes()) {
+            node.childNodes.forEach(replaceText);
         }
-    });
+    }
+
+    replaceText(document.body);
 }
 
 replaceWords();
