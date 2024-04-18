@@ -3,7 +3,9 @@
   "name": "UnGendered",
   "version": "1.0.0",
   "description": "Entfernt gendered Texte auf allen Webseiten. Dies passiert vollautomatisch. Beispiel: Schüler*innen wird zu Schüler.",
-  "permissions": ["activeTab"],
+  "permissions": [
+    "storage"
+  ],
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
