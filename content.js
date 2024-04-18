@@ -3,7 +3,7 @@ var replacements = {
     "Lernender": "Schüler",
     "Mediziner\\*in": "Arzt",
     "Studierender": "Student",
-    "Patient*in": "Patient",
+    "Patient\\*in": "Patient",
     "Bürger\\*in": "Bürger",
     "Lehrerin": "Lehrer",
     "Ärztin": "Arzt",
