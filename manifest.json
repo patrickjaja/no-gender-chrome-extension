@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "NoGender",
+  "name": "UnGendered",
   "version": "1.0.0",
-  "description": "Entfernt gendered Texte auf allen Webseiten.",
+  "description": "Entfernt gendered Texte auf allen Webseiten. Dies passiert vollautomatisch. Beispiel: Schüler*innen wird zu Schüler.",
   "permissions": ["activeTab"],
   "icons": {
     "16": "icon.png",

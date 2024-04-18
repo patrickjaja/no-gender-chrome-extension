@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NoGenderChromeExtension.iml" filepath="$PROJECT_DIR$/.idea/NoGenderChromeExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UnGenderedChromeExtension.iml" filepath="$PROJECT_DIR$/.idea/UnGenderedChromeExtension.iml" />
     </modules>
   </component>
 </project>
